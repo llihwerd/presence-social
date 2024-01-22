@@ -1,17 +1,30 @@
 import { Update } from "../models/update.js"
 
 
-
 function create(req, res) {
-  Update.create(req.body)
+  if (!req.user) {
+    console.log('User not authenticated')
+    return res.redirect('/auth/login')
+  }
+
+  const updateData = {
+    ...req.body,
+    owner: req.user._id
+  }
+
+  Update.create(updateData)
   .then(update => {
-      res.redirect(`profiles`)
+      res.redirect(`/profiles/${req.user._id}`)
     })
   .catch(err => {
     console.log(err)
-    res.redirect(`/profiles`)
+    res.redirect(`/profiles/${req.user._id}`)
   })
 }
+
+
+
+
 
 
 function show(req, res) {
@@ -41,7 +54,7 @@ function edit(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/profiles/show')
+    res.redirect(`/profiles/${req.user._id}`)
   })
 }
 
@@ -54,7 +67,7 @@ function update(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/profiles/show')
+    res.redirect(`/profiles/${req.user._id}`)
   })
 }
 
@@ -63,11 +76,11 @@ function update(req, res) {
 function deleteUpdate(req, res) {
   Update.findByIdAndDelete(req.params.updateId)
   .then(update => {
-    res.redirect('/profiles/show')
+    res.redirect(`/profiles/${req.user._id}`)
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/profiles/show')
+    res.redirect(`/profiles/${req.user._id}`)
   })
 }
 
