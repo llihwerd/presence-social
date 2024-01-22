@@ -14,12 +14,11 @@
   <h2>Updates</h2>
   <form 
     id="add-update-form"
-    action="/updates/<%= profile._id %>"
+    action="/updates"
     method="POST"
   >
-    <label for="content-textarea">Review:</label>
+    <label for="content-textarea">Update:</label>
     <textarea name="content" id="content-textarea"></textarea>
-    <label for="rating-select">Rating:</label>
     <button type="submit">Post Update</button>
   </form>
 
