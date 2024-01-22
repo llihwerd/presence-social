@@ -13,6 +13,9 @@ router.delete('/:updateId', updatesCtrl.deleteUpdate)
 // GET http://localhost:3000/updates/:updateId
 router.get('/:updateId', updatesCtrl.show)
 
+// GET http://localhost:3000/updates/:updateId/edit
+router.get('/:updateId', updatesCtrl.edit)
+
 export {
   router
 }
