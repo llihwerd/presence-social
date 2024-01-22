@@ -13,6 +13,7 @@ const commentSchema = new Schema({
 const updateSchema = new Schema({
   content: String,
   comments: [commentSchema],
+  owner: { type: Schema.Types.ObjectId, ref: 'Profile' },
 },{
   timestamps: true
 })
