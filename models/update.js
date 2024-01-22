@@ -11,7 +11,7 @@ const commentSchema = new Schema({
 
 
 const updateSchema = new Schema({
-  name: {type: String, required: true},
+  content: String,
   comments: [commentSchema],
 },{
   timestamps: true

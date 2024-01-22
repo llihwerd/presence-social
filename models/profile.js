@@ -6,7 +6,6 @@ const profileSchema = new Schema({
   name: String,
   avatar: String,
   bio: String,
-  posts: [{type: Schema.Types.ObjectId, ref: 'Update'}]
 }, {
   timestamps: true
 })
