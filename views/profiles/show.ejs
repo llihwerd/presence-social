@@ -1,0 +1,38 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/main.css" />
+<%- include('../partials/nav') %>
+
+<main>
+  <h1><%= title %></h1>
+  <section>
+    <div>Name: </div>
+    <div><%= profile.name %></div>
+    <div>Bio: </div>
+    <div><%= profile.bio %></div>
+  </section>
+	
+  <h2>Updates</h2>
+  <form 
+    id="add-update-form"
+    action="/profiles/<%= profile._id %>/updates"
+    method="POST"
+  >
+    <label for="content-textarea">Review:</label>
+    <textarea name="content" id="content-textarea"></textarea>
+    <label for="rating-select">Rating:</label>
+    <button type="submit">Post Update</button>
+  </form>
+
+	<% if (profile.updates.length) { %>
+    <table>
+      <tbody>
+        <% Profile.find({}) %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <h3>No Updates Yet</h3>
+  <% } %>
+</main>
+
+
+<%- include('../partials/footer') %>
