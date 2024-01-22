@@ -14,7 +14,7 @@
   <h2>Updates</h2>
   <form 
     id="add-update-form"
-    action="/profiles/<%= profile._id %>/updates"
+    action="/updates/<%= profile._id %>"
     method="POST"
   >
     <label for="content-textarea">Review:</label>
@@ -23,15 +23,6 @@
     <button type="submit">Post Update</button>
   </form>
 
-	<% if (profile.updates.length) { %>
-    <table>
-      <tbody>
-        <% Profile.find({}) %>
-      </tbody>
-    </table>
-  <% } else { %>
-    <h3>No Updates Yet</h3>
-  <% } %>
 </main>
 
 
