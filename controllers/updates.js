@@ -15,6 +15,21 @@ function create(req, res) {
 }
 
 
+function show(req, res) {
+  Update.findById(req.params.updateId)
+  .then(update => {
+    res.render('updates/show', {
+      update: update,
+      title: 'update'
+      })
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/')
+    })
+  }
+
+
 function deleteUpdate(req, res) {
   Update.findByIdAndDelete(req.params.updateId)
   .then(update => {
@@ -29,5 +44,6 @@ function deleteUpdate(req, res) {
 
 export {
   create,
+  show,
   deleteUpdate
 }
