@@ -32,12 +32,25 @@ function show(req, res) {
 
 
 function edit(req, res) {
-  Update.findByIdAndUpdate(req.params.updateId)
+  Update.findById(req.params.updateId)
   .then(update => {
     res.render('updates/edit', {
       update: update,
       title: 'Edit Update'
     })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/profiles/show')
+  })
+}
+
+
+
+function update(req, res) {
+  Update.findByIdAndUpdate(req.params.updateId, req.body, {new: true})
+  .then(update => {
+    res.redirect(`/updates/${update._id}`)
   })
   .catch(err => {
     console.log(err)
@@ -64,5 +77,6 @@ export {
   create,
   show,
   edit,
+  update,
   deleteUpdate
 }
