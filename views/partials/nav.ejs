@@ -4,6 +4,23 @@
 </head>
 <body>
   <nav>
+    <i class="fas fa-film fa-2x"></i>
+    <a 
+      href="/movies/new" class=<%= title === 'Add Movie' ? 'active' : '' %>
+    >
+      ADD MOVIE
+    </a>
+    <a 
+      href="/movies" class=<%= title === 'All Movies' ? 'active' : '' %>
+    >
+      ALL MOVIES
+    </a>
+    <a 
+      href="/performers/new" class=<%= title === 'Add Performer' ? 'active' : '' %>
+    >
+      ADD PERFORMER
+    </a>
+
     <% if (user) { %>
       <a href="/auth/logout" class="right">
         <button type="submit">Logout</button>
