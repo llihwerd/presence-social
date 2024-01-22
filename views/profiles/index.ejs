@@ -1,5 +1,5 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/movies/index.css" />
+<link rel="stylesheet" href="/stylesheets/main.css" />
 <%- include('../partials/nav') %>
 
 <main>
@@ -12,10 +12,10 @@
       </tr>
     </thead>
     <tbody>
-      <% movies.forEach((movie) => { %>
+      <% profiles.forEach((profile) => { %>
       <tr>
         <td><%= profile.name %></td>
-        <td><%= profil.bio %></td>
+        <td><%= profile.bio %></td>
         <td><a href="/profiles/<%= profile._id %>">View</a></td>
       </tr>
       <% }) %>
