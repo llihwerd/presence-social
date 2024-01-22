@@ -1,4 +1,3 @@
-import { Profile } from "../models/profile.js"
 import { Update } from "../models/update.js"
 
 
@@ -33,10 +32,10 @@ function show(req, res) {
 
 
 function edit(req, res) {
-  Update.findById(req.params.updateId)
+  Update.findByIdAndUpdate(req.params.updateId)
   .then(update => {
     res.render('updates/edit', {
-      movie: movie,
+      update: update,
       title: 'Edit Update'
     })
   })
