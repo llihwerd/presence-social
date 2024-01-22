@@ -5,19 +5,14 @@
 <main>
   <h1><%= title %></h1>
   <section>
-    <div>Title: </div>
+    <div>Update: </div>
 		<div>
-      <%= movie.title %> 
-      <a href="/movies/<%= movie._id %>/edit">
-        <button>Edit Movie</button>
+      <%= update.owner %> 
+      <%= update.content %> 
+      <a href="/updates/<%= update._id %>/edit">
+        <button>Edit Update</button>
       </a>
     </div>
-    <div>Release Year: </div>
-    <div><%= movie.releaseYear %></div>
-    <div>Rating: </div>
-    <div><%= movie.mpaaRating %></div>
-    <div>Now Showing: </div>
-    <div><%= movie.nowShowing ? 'Yes' : 'Nope' %></div>
 		<%# start cast list %>
     <div>Cast:</div>
     <ul>

@@ -45,21 +45,7 @@ function show(req, res) {
 
 
 
-function deleteUpdate(req, res) {
-  Update.findByIdAndDelete(req.params.updateId)
-  .then(update => {
-    res.redirect('/profiles/show')
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect('/profiles/show')
-  })
-}
-
-
-
 export {
   index,
   show,
-  deleteUpdate
 }
