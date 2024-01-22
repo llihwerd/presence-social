@@ -15,7 +15,7 @@ router.get('/:updateId', updatesCtrl.show)
 router.get('/:updateId/edit', updatesCtrl.edit)
 
 // PUT http://localhost:3000/updates/:updateId
-router.put('/:movieId', moviesCtrl.update)
+router.put('/:updateId', updatesCtrl.update)
 
 // DELETE http://localhost:3000/updates/:updateId
 router.delete('/:updateId', updatesCtrl.deleteUpdate)
