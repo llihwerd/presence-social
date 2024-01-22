@@ -30,6 +30,24 @@ function show(req, res) {
   }
 
 
+
+
+function edit(req, res) {
+  Update.findById(req.params.updateId)
+  .then(update => {
+    res.render('updates/edit', {
+      movie: movie,
+      title: 'Edit Update'
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/profiles/show')
+  })
+}
+
+
+
 function deleteUpdate(req, res) {
   Update.findByIdAndDelete(req.params.updateId)
   .then(update => {
@@ -42,8 +60,10 @@ function deleteUpdate(req, res) {
 }
 
 
+
 export {
   create,
   show,
+  edit,
   deleteUpdate
 }
