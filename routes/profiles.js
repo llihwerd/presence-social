@@ -4,7 +4,7 @@ import * as moviesCtrl from '../controllers/movies.js'
 const router = Router()
 
 // GET http://localhost:3000/movies
-router.get('/', moviesCtrl.index)
+router.get('/', profilesCtrl.index)
 // GET http://localhost:3000/movies/new
 router.get('/new', moviesCtrl.new)
 // GET http://localhost:3000/movies/:movieId
