@@ -23,3 +23,4 @@ const Update = mongoose.model('Update', updateSchema)
 export {
   Update
 }
+

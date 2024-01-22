@@ -9,6 +9,10 @@ router.get('/', profilesCtrl.index)
 // GET http://localhost:3000/profiles/:profileId
 router.get('/:profileId', profilesCtrl.show)
 
+// DELETE http://localhost:3000/profiles/:profileId
+router.delete('/:updateId', profilesCtrl.deleteUpdate)
+
+
 
 
 

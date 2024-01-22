@@ -28,6 +28,11 @@
       <% updates.forEach(update => { %>
       <tr>
         <td><%= update.content %></td>
+        <td>
+          <form action="/updates/<%= update._id %>?_method=DELETE" method="POST">
+            <button>X</button>
+          </form>
+        </td>
       </tr>
       <% }) %>
       </tbody>
