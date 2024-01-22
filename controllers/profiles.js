@@ -1,4 +1,5 @@
 import { Profile } from "../models/profile.js"
+import { Update } from "../models/update.js"
 
 
 function index(req, res) {
@@ -17,12 +18,23 @@ function index(req, res) {
 
 
 
+
+
 function show(req, res) {
   Profile.findById(req.params.profileId)
+  .populate('posts')
   .then(profile => {
-    res.render('profiles/show', {
-      profile: profile,
-      title: 'Person',
+    Update.find({_id: {$nin: profile.posts}})
+    .then(updates => {
+      res.render('profiles/show', {
+        profile: profile,
+        updates: updates,
+        title: 'person'
+      })
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/')
     })
   })
   .catch(err => {

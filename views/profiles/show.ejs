@@ -11,7 +11,7 @@
     <div><%= profile.bio %></div>
   </section>
 	
-  <h2>Updates</h2>
+
   <form 
     id="add-update-form"
     action="/updates"
@@ -21,6 +21,18 @@
     <textarea name="content" id="content-textarea"></textarea>
     <button type="submit">Post Update</button>
   </form>
+
+  <h2>Updates</h2>
+  <table>
+    <tbody>
+      <% updates.forEach(update => { %>
+      <tr>
+        <td><%= update.content %></td>
+      </tr>
+      <% }) %>
+      </tbody>
+    </table>
+
 
 </main>
 
