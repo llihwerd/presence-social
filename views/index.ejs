@@ -16,8 +16,8 @@
 
   
 <main>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
-
+  <h1>Presence Social</h1>
+  <h2>Where your presence is always welcome 🙏</h2>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
@@ -26,16 +26,16 @@
       />
     </div>
   <% } %>
-
   <% if (user) { %>
+    <h3>Glad you're here, <%= user ? user.profile.name : "friend" %></h3>
     <a href="/auth/logout" class="right">
       <button type="submit">Logout</button>
     </a>
-    <a 
+    <h4><a 
     href="/profiles/<%= user.profile._id %>" %>
   >
   View your profile >>>
-  </a>
+  </a></h4>
   <% } else { %>
     <div 
       id="g_id_onload"

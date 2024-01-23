@@ -37,7 +37,7 @@ body > main {
 }
 
 body > main h1:first-child {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: #2c3e50; /* Darker color for better contrast */
 }
 
@@ -52,8 +52,9 @@ body > nav {
 }
 
 nav > i.presence-title {
-  font-size: 1.5em; /* Increase the font size for better visibility */
+  font-size: 35px; /* Increase the font size for better visibility */
   color: white; /* White color for contrast against the dark background */
+  padding: 5px;
 }
 
 nav > a {
@@ -124,7 +125,7 @@ button {
   border: none;
   padding: 10px 20px;
   border-radius: 5px
-
+}
 
 
   /* Profile Section Styling */
@@ -177,7 +178,7 @@ button {
 }
 
 .button:hover {
-  background-color: #2980b9; /* Slightly darker blue on hover */
+  background-color: #295878; /* Slightly darker blue on hover */
 }
 
 /* Responsive adjustments */
@@ -189,4 +190,8 @@ button {
   .profile-name, .profile-bio {
     text-align: center; /* Center text on smaller screens */
   }
+}
+
+h1 {
+  margin-bottom: 5px;
 }
