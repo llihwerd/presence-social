@@ -4,9 +4,11 @@
 
 <main>
   <h1><%= title %></h1>
+  <% if (profile.equals(user?.profile._id)) { %>
   <a href="/profiles/<%= profile._id %>/edit">
     <button class="btn">Edit Profile</button>
   </a>
+  <% } %>
   <section>
     <div>Name: </div>
     <div><%= profile.name %></div>

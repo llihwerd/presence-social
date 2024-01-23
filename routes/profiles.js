@@ -9,8 +9,11 @@ router.get('/', profilesCtrl.index)
 // GET http://localhost:3000/profiles/:profileId
 router.get('/:profileId', profilesCtrl.show)
 
-// GET localhost:3000/tacos/:tacoId/edit
-router.get('/:tacoId/edit', isLoggedIn, tacosCtrl.edit)
+// GET http://localhost:3000/profiles/:profileId/edit
+router.get('/:profileId/edit', isLoggedIn, profilesCtrl.edit)
+
+// PUT http://localhost:3000/profiles/:profileId
+router.put('/:profileId', isLoggedIn, profilesCtrl.update)
 
 
 

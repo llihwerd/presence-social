@@ -46,6 +46,35 @@ function show(req, res) {
 
 
 
+function edit(req, res) {
+  Profile.findById(req.params.profileId)
+  .then(profile => {
+    res.render('profiles/edit', {
+      profile: profile,
+      title: 'Edit Profile'
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/profiles/${req.user.profile._id}`)
+  })
+}
+
+
+
+function update(req, res) {
+  Update.findByIdAndUpdate(req.params.updateId, req.body, {new: true})
+  .then(update => {
+    res.redirect(`/updates/${update._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/profiles/${req.user.profile._id}`)
+  })
+}
+
+
+
 export {
   index,
   show,
