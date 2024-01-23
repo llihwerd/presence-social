@@ -28,7 +28,7 @@
   </form>
   <% } %>
 
-  
+
 
   <h2>Updates</h2>
   <table>
@@ -36,7 +36,7 @@
       <% updates.forEach(update => { %>
       <tr>
         <td><%= update.content %></td>
-        <td><a href="/updates/<%= update._id %>">DETAILS</a></td>
+        <td><a href="/updates/<%= update._id %>"><button class="button">Update Details</button></a></td>
         <td>
           <form action="/updates/<%= update._id %>?_method=DELETE" method="POST">
             <button class="button">X</button>
