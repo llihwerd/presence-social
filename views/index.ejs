@@ -10,10 +10,6 @@
 <body>
   <nav>
     <i class="presence-title">Presence</i>
-    <i class="fas fa-users fa-2x"></i>
-<a 
-  href="/profiles" class="profiles"%>
-</a>
   </nav>
 
   
@@ -33,6 +29,11 @@
     <a href="/auth/logout" class="right">
       <button type="submit">Logout</button>
     </a>
+    <a 
+    href="/profiles" %>
+  >
+  Go to Profiles
+  </a>
   <% } else { %>
     <div 
       id="g_id_onload"
@@ -50,14 +51,13 @@
       data-shape="rectangular"
       data-logo_alignment="left"
     ></div>
+    <a 
+    href="/profiles" %>
+  >
+  Continue as guest
+  </a>
   <% } %>
 
-
-  <a 
-  href="/profiles" %>
->
-Continue as guest
-</a>
 
 
 </main>
