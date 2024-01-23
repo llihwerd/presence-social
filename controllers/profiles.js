@@ -78,6 +78,7 @@ function update(req, res) {
 export {
   index,
   show,
+  edit,
 }
 
 

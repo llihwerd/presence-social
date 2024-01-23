@@ -1,0 +1,19 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/main.css">
+<%- include('../partials/nav') %>
+
+<main>
+  <h1><%= title %></h1>
+  <form 
+    id="profile-form" 
+    action="/profiles/<%= profile._id %>?_method=PUT" 
+    method="POST"
+  >
+    <label for="bio-content-textarea">Bio:</label>
+    <textarea name="content" id="bio-content-textarea"><%= profile.bio %></textarea>
+    <button type="submit">Save</button>
+
+  </form>
+</main>
+
+<%- include('../partials/footer') %>
