@@ -30,7 +30,7 @@ function show(req, res) {
       res.render('profiles/show', {
         profile: profile,
         updates: updates,
-        title: 'person'
+        title: `${profile.name}'s Presence`
       })
     })
     .catch(err => {
