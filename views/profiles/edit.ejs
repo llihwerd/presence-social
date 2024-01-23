@@ -9,8 +9,13 @@
     action="/profiles/<%= profile._id %>?_method=PUT" 
     method="POST"
   >
-    <label for="bio-content-textarea">Bio:</label>
-    <textarea name="content" id="bio-content-textarea"><%= profile.bio %></textarea>
+    <label for="bio-content">Bio:</label>
+    <input 
+        type="text"
+        name="bio" 
+        value="<%= profile.bio %>" 
+        autocomplete="off"
+      >
     <button type="submit">Save</button>
 
   </form>

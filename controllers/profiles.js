@@ -80,6 +80,7 @@ export {
   index,
   show,
   edit,
+  update,
 }
 
 
