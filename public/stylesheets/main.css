@@ -128,6 +128,12 @@ button {
 }
 
 
+button:hover {
+  background-color: #295878; /* Slightly darker blue on hover */
+}
+
+
+
   /* Profile Section Styling */
 .profile-section {
   background: white;
