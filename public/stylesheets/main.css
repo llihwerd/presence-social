@@ -118,20 +118,20 @@ tr:hover {
   background-color: #e8eceb; /* Highlight table row on hover */
 }
 
-/* Button Styles */
+/* Button styling */
 button {
-  background-color: #3498db; /* Blue color for buttons */
+  padding: 10px 15px;
+  background-color: #3498db; /* Blue background for buttons */
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Cursor pointer to indicate it's clickable */
+  font-size: 1em; /* Matching font size with text fields */
+  margin-top: 10px; /* Spacing above the button */
 }
-
 
 button:hover {
   background-color: #295878; /* Slightly darker blue on hover */
-  cursor: pointer;
 }
 
 
@@ -147,7 +147,7 @@ button:hover {
 }
 
 .profile-name {
-  font-size: 20px; /* Larger font size for the name */
+  font-size: 30px; /* Larger font size for the name */
   font-weight: 550; /* Make the name stand out */
   margin-bottom: 10px; /* Spacing after the name */
 }
