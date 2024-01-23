@@ -20,10 +20,12 @@ function create(req, res) {
 
 function show(req, res) {
   Update.findById(req.params.updateId)
+  .populate('owner')
   .then(update => {
     res.render('updates/show', {
       update: update,
-      title: 'update'
+      title: 'Update',
+      user: req.user
       })
     })
     .catch(err => {
