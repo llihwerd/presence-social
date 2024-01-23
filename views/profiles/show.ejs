@@ -12,7 +12,8 @@
   </section>
 	
 
-  <form 
+  <% if (profile.equals(user?.profile._id)) { %>
+    <form 
     id="add-update-form"
     action="/updates"
     method="POST"
@@ -21,6 +22,8 @@
     <textarea name="content" id="content-textarea"></textarea>
     <button type="submit">Post Update</button>
   </form>
+  <% } %>
+
 
   <h2>Updates</h2>
   <table>
