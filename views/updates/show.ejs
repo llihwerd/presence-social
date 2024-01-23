@@ -6,15 +6,9 @@
   <h1><%= title %></h1>
   <section>
 
-    <div>
-      Debug info: 
-      update.owner = <%= update.owner %>,
-      user.profile._id = <%= user?.profile?._id %>
-    </div>
-
     <div>Update: </div>
 		<div>
-      <%= update.owner %> 
+      <%= update.owner.name %> 
       <%= update.content %>
       <% if (update.owner.equals(user?.profile._id)) { %>        
       <a href="/updates/<%= update._id %>/edit">

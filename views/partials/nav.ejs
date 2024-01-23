@@ -4,22 +4,17 @@
 </head>
 <body>
   <nav>
-    <i class="fas fa-film fa-2x"></i>
     <a 
-      href="/movies/new" class=<%= title === 'Add Movie' ? 'active' : '' %>
+      href="/profiles"
     >
-      ADD MOVIE
+      All Profiles
     </a>
-    <a 
-      href="/movies" class=<%= title === 'All Movies' ? 'active' : '' %>
-    >
-      ALL MOVIES
-    </a>
-    <a 
-      href="/performers/new" class=<%= title === 'Add Performer' ? 'active' : '' %>
-    >
-      ADD PERFORMER
-    </a>
+    <% if (user && user.profile) { %>
+      <a href="/profiles/<%= user.profile._id %>">
+        My Profile
+      </a>
+    <% } %>
+    
 
     <% if (user) { %>
       <a href="/auth/logout" class="right">
