@@ -81,13 +81,9 @@ nav > a:hover, nav > a.active {
 
 nav > a.right {
   margin-left: auto; /* Pushes the logout button or similar to the right */
-  background-color: #e74c3c; /* A red color for logout to make it stand out */
   color: white;
 }
 
-nav > a.right:hover {
-  background-color: #c0392b; /* A darker red on hover for the logout button */
-}
 
 /* Table Styles */
 table {
