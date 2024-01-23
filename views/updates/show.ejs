@@ -26,6 +26,22 @@
         </button>
       </form>
     <% } %>
+
+    <% if (update.comments.length) { %>
+      <table>
+        <tbody>
+          <% update.comments.forEach(function(comment) { %>
+            <tr>
+              <td><%= comment.owner %></td>
+              <td><%= comment.content %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <h3>No Comments Yet</h3>
+    <% } %>
+  
 </main>
 
 

@@ -84,8 +84,6 @@ function deleteUpdate(req, res) {
 
 function createComment(req, res) {
   Update.findById(req.params.updateId)
-  .populate('owner')
-  .populate('comments')
   .then(update => {
     update.comments.push(req.body)
     update.save()
@@ -102,6 +100,7 @@ function createComment(req, res) {
     res.redirect(`/updates/${update._id}`)
   })
 }
+
 
 
 
