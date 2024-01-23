@@ -3,18 +3,17 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1><%= title %></h1>
+  <h1 class="profile-name"><%= title %></h1>
   <% if (profile.equals(user?.profile._id)) { %>
   <a href="/profiles/<%= profile._id %>/edit">
     <button class="btn">Edit Profile</button>
   </a>
   <% } %>
   <section>
-    <div>Name: </div>
-    <div><%= profile.name %></div>
-    <div>Bio: </div>
-    <div><%= profile.bio %></div>
-  </section>
+    <div class="profile-section">
+      <div class="profile-name"><%= profile.name %></div>
+      <div class="profile-bio"><%= profile.bio %></div>
+    </div>
 	
 
   <% if (profile.equals(user?.profile._id)) { %>
@@ -24,8 +23,8 @@
     method="POST"
   >
     <label for="content-textarea">Update:</label>
-    <textarea name="content" id="content-textarea"></textarea>
-    <button type="submit">Post Update</button>
+    <textarea name="content" class="text-field" id="content-textarea"></textarea>
+    <button class="button" type="submit">Post Update</button>
   </form>
   <% } %>
 
