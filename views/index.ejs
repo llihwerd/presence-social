@@ -9,7 +9,7 @@
 
 <body>
   <nav>
-    <i class="presence-title">Presence</i>
+    <i class="presence-title">Presence Social</i>
   </nav>
 
   
@@ -30,9 +30,9 @@
       <button type="submit">Logout</button>
     </a>
     <a 
-    href="/profiles" %>
+    href="/profiles/<%= user.profile._id %>" %>
   >
-  Go to Profiles
+  View your profile >>>
   </a>
   <% } else { %>
     <div 
