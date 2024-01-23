@@ -24,7 +24,7 @@ router.put('/:updateId', isLoggedIn, updatesCtrl.update)
 // DELETE http://localhost:3000/updates/:updateId
 router.delete('/:updateId', isLoggedIn, updatesCtrl.deleteUpdate)
 
-// POST http://localhost:3000/updates/:updateId
+// POST http://localhost:3000/updates/:updateId/comments
 router.post('/:updateId/comments', updatesCtrl.createComment)
 
 export {

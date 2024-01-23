@@ -82,10 +82,33 @@ function deleteUpdate(req, res) {
 
 
 
+function createComment(req, res) {
+  Update.findById(req.params.flightId)
+  .populate('owner')
+  .then(update => {
+    update.comments.push(req.body)
+    update.save()
+    .then(() => {
+      res.redirect(`/updates/${update._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect(`/profiles/${req.user.profile._id}`)
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/profiles/${req.user.profile._id}`)
+  })
+}
+
+
+
 export {
   create,
   show,
   edit,
   update,
-  deleteUpdate
+  deleteUpdate,
+  createComment,
 }
