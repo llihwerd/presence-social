@@ -124,14 +124,15 @@ button {
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
 button:hover {
   background-color: #295878; /* Slightly darker blue on hover */
+  cursor: pointer;
 }
-
 
 
   /* Profile Section Styling */
@@ -141,13 +142,13 @@ button:hover {
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 80%; /* Adjust width as needed */
-  max-width: 600px; /* Maximum width of the profile section */
+  max-width: 700px; /* Maximum width of the profile section */
+  cursor: pointer;
 }
 
 .profile-name {
-  font-size: 2em; /* Larger font size for the name */
-  font-weight: bold; /* Make the name stand out */
+  font-size: 20px; /* Larger font size for the name */
+  font-weight: 550; /* Make the name stand out */
   margin-bottom: 10px; /* Spacing after the name */
 }
 
@@ -196,8 +197,4 @@ button:hover {
   .profile-name, .profile-bio {
     text-align: center; /* Center text on smaller screens */
   }
-}
-
-h1 {
-  margin-bottom: 5px;
 }

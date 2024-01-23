@@ -6,7 +6,7 @@
   <h1 class="profile-name"><%= title %></h1>
   <% if (profile.equals(user?.profile._id)) { %>
   <a href="/profiles/<%= profile._id %>/edit">
-    <button>Edit Profile</button>
+    <button class="button">Edit Profile</button>
   </a>
   <% } %>
   <section>
@@ -38,7 +38,7 @@
         <td><a href="/updates/<%= update._id %>">DETAILS</a></td>
         <td>
           <form action="/updates/<%= update._id %>?_method=DELETE" method="POST">
-            <button>X</button>
+            <button class="button">X</button>
           </form>
         </td>
       </tr>
