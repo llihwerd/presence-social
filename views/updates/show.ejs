@@ -18,6 +18,14 @@
       </a>
       <% } %>
     </div>
+    <% if (user) { %>
+      <form action="/updates/<%= update._id %>/comments" method="POST">
+        <textarea name="content" placeholder="Write your comment"></textarea>
+        <button class="btn" type="submit">
+          Post Comment
+        </button>
+      </form>
+    <% } %>
 </main>
 
 

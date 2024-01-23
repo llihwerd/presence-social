@@ -21,6 +21,7 @@ function create(req, res) {
 function show(req, res) {
   Update.findById(req.params.updateId)
   .populate('owner')
+  .populate('comments')
   .then(update => {
     res.render('updates/show', {
       update: update,
@@ -33,6 +34,8 @@ function show(req, res) {
       res.redirect('/')
     })
   }
+
+  
 
 
 
