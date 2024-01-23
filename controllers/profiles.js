@@ -25,7 +25,7 @@ function show(req, res) {
   Profile.findById(req.params.profileId)
   .populate('posts')
   .then(profile => {
-    Update.find({_id: {$nin: profile.posts}})
+    Update.find({ owner: profile })
     .then(updates => {
       res.render('profiles/show', {
         profile: profile,
