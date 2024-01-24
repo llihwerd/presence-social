@@ -46,7 +46,8 @@ body > main h2 {
   margin: 7px;
 }
 
-body > main h1:first-child {
+body > main h1 {
+  display: inline;
   margin-bottom: 20px;
   color: #2c3e50;
 }
@@ -312,13 +313,8 @@ button:hover {
 
 
 
-.update-card {
-  background: white;
-  padding: 20px;
+.update-show-card {
   margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
 }
 
 
@@ -354,17 +350,14 @@ button:hover {
 .comment-card {
   background: #f9f9f9;
   border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 10px;
+  padding: 8px;
   border-radius: 8px;
 }
 
-.comment-owner {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
 .comment-content {
-  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 

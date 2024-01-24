@@ -5,7 +5,7 @@
 <main>
   <h1><%= title %></h1>
   <section class="update-section">
-    <div class="update-card">
+    <div class="update-show-card">
       <p class="update-posted-by">Posted by: <%= update.owner.name %></p>
       <div class="update-content"><%= update.content %></div>
       <% if (update.owner.equals(user?.profile._id)) { %>        
@@ -26,9 +26,9 @@
 
     <div class="comments-section">
       <% if (update.comments.length) { %>
+        <h3 class="update-posted-by">Comments:</h3>
         <% update.comments.forEach(function(comment) { %>
           <div class="comment-card">
-            <p class="comment-owner"><%= comment.owner %></p>
             <p class="comment-content"><%= comment.content %></p>
           </div>
         <% }) %>
