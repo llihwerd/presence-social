@@ -4,44 +4,39 @@
 
 <main>
   <h1><%= title %></h1>
-  <section>
-
-    <div>
-      Posted by: <%= update.owner.name %> 
-    </div>
-		<div>
-      <%= update.content %>
+  <section class="update-section">
+    <div class="update-card">
+      <p>Posted by: <%= update.owner.name %></p>
+      <div class="update-content"><%= update.content %></div>
       <% if (update.owner.equals(user?.profile._id)) { %>        
-      <a href="/updates/<%= update._id %>/edit">
-        <button>Edit Update</button>
+      <a href="/updates/<%= update._id %>/edit" class="button-link">
+        <button class="postbutton">Edit Update</button>
       </a>
       <% } %>
     </div>
+
     <% if (user) { %>
-      <form action="/updates/<%= update._id %>/comments" method="POST">
-        <textarea name="content" placeholder="Write your comment"></textarea>
-        <button class="btn" type="submit">
+      <form action="/updates/<%= update._id %>/comments" method="POST" class="comment-form">
+        <textarea name="content" class="text-field" placeholder="Write your comment"></textarea>
+        <button class="postbutton" type="submit">
           Post Comment
         </button>
       </form>
     <% } %>
 
-    <% if (update.comments.length) { %>
-      <table>
-        <tbody>
-          <% update.comments.forEach(function(comment) { %>
-            <tr>
-              <td><%= comment.owner %></td>
-              <td><%= comment.content %></td>
-            </tr>
-          <% }) %>
-        </tbody>
-      </table>
-    <% } else { %>
-      <h3>No Comments Yet</h3>
-    <% } %>
-  
+    <div class="comments-section">
+      <% if (update.comments.length) { %>
+        <% update.comments.forEach(function(comment) { %>
+          <div class="comment-card">
+            <p class="comment-owner"><%= comment.owner %></p>
+            <p class="comment-content"><%= comment.content %></p>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <h3>No Comments Yet</h3>
+      <% } %>
+    </div>
+  </section>
 </main>
-
 
 <%- include('../partials/footer') %>
