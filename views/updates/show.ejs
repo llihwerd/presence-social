@@ -6,7 +6,7 @@
   <h1><%= title %></h1>
   <section class="update-section">
     <div class="update-card">
-      <p>Posted by: <%= update.owner.name %></p>
+      <p class="update-posted-by">Posted by: <%= update.owner.name %></p>
       <div class="update-content"><%= update.content %></div>
       <% if (update.owner.equals(user?.profile._id)) { %>        
       <a href="/updates/<%= update._id %>/edit" class="button-link">

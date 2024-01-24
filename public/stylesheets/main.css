@@ -318,7 +318,30 @@ button:hover {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
+
+
+
+.update-posted-by {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.update-content {
+  padding: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+
 
 .comment-form {
   margin-bottom: 20px;
