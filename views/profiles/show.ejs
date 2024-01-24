@@ -33,9 +33,11 @@
         <a href="/updates/<%= update._id %>" class="button-link">
           <button class="button">View Update</button>
         </a>
+        <% if (profile.equals(user?.profile._id)) { %>
         <form action="/updates/<%= update._id %>?_method=DELETE" method="POST">
           <button class="button delete-button">X</button>
         </form>
+        <% } %>
       </div>
     </div>
     <% }) %>
