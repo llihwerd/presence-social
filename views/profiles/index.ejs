@@ -3,24 +3,14 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1>People</h1>
-  <table id="list">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Bio</th>
-      </tr>
-    </thead>
-    <tbody>
+  <div class="people-grid">
       <% profiles.forEach((profile) => { %>
-      <tr>
-        <td><%= profile.name %></td>
-        <td><%= profile.bio %></td>
-        <td><a href="/profiles/<%= profile._id %>"><button class="button">View Profile</button></a></td>
-      </tr>
-      <% }) %>
-    </tbody>
-  </table>
+          <%= profile.name %>
+          <%= profile.bio %>
+          <a href="/profiles/<%= profile._id %>" class="profile-card"><button class="button">View Profile</button></a>
+        <% }) %>
+  </div>
+
 </main>
 
 <%- include('../partials/footer') %>

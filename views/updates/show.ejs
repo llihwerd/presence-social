@@ -10,7 +10,6 @@
       Posted by: <%= update.owner.name %> 
     </div>
 		<div>
-      <%= update.owner.name %> 
       <%= update.content %>
       <% if (update.owner.equals(user?.profile._id)) { %>        
       <a href="/updates/<%= update._id %>/edit">

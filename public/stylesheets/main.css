@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
 }
 
-/* The Universal Selector */
 *, *::before, *::after {
   box-sizing: inherit;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -10,12 +9,12 @@ html {
 }
 
 body {
-  background-color: #f4f7f6; /* A softer gray */
+  background-color: #f4f7f6;
   margin: 0;
   color: #424748;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr; /* Auto for nav height */
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     "nav"
     "main";
@@ -27,79 +26,78 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white; /* Cleaner background */
+  background-color: white;
   padding: 20px;
-  width: 90%; /* Add some constraints */
-  max-width: 1200px; /* Maximum width */
-  margin: auto; /* Centering the main content */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  border-radius: 8px; /* Slight rounding of corners */
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 body > main h1:first-child {
   margin-bottom: 20px;
-  color: #2c3e50; /* Darker color for better contrast */
+  color: #2c3e50;
 }
 
 body > nav {
   grid-area: nav;
-  background-color: #2c3e50; /* Darker background for the navbar */
+  background-color: #2c3e50;
   display: flex;
-  justify-content: space-between; /* Space items out */
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav > i.presence-title {
-  font-size: 35px; /* Increase the font size for better visibility */
-  color: white; /* White color for contrast against the dark background */
+  font-size: 35px;
+  color: white;
   padding: 5px;
 }
 
 
 nav > a {
-  margin: 0 10px; /* Reduced margin for a tighter nav */
+  margin: 0 10px;
   text-decoration: none;
-  padding: 8px 16px; /* Standard padding */
-  border: 2px solid transparent; /* Transparent border for a clean look */
-  transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
 nav > a:not(:last-child) {
-  border-right: 2px solid #5c6f7b; /* Separator between the links */
+  border-right: 2px solid #5c6f7b;
 }
 
 nav > a:visited {
-  color: white; /* Maintaining the white color on visited links */
+  color: white;
 }
 
 nav > a:hover, nav > a.active {
-  color: #2c3e50; /* Dark text on hover/active */
-  background-color: #e8eceb; /* Light background for the active/hover state */
-  border-color: #e8eceb; /* Border color matches background on hover/active */
+  color: #2c3e50;
+  background-color: #e8eceb;
+  border-color: #e8eceb;
 }
 
 nav > a.right {
-  margin-left: auto; /* Pushes the logout button or similar to the right */
+  margin-left: auto;
   color: white;
 }
 
 
-/* Table Styles */
 table {
-  width: 100%; /* Full width tables */
-  border-collapse: collapse; /* Collapse borders */
-  margin-top: 20px; /* Spacing before the table */
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table, th, td {
-  border: 1px solid #ddd; /* Light grey border */
+  border: 1px solid #ddd;
 }
 
 th, td {
-  text-align: left; /* Align text to the left */
-  padding: 8px; /* Padding inside table cells */
+  text-align: left;
+  padding: 8px;
 }
 
 th {
@@ -115,83 +113,108 @@ tr:hover {
   background-color: #e8eceb;
 }
 
-/* Button styling */
+
 button {
   padding: 10px 15px;
-  background-color: #3498db; /* Blue background for buttons */
+  background-color: #3498db;
   color: white;
   border: none;
-  border-radius: 4px; /* Rounded corners for buttons */
-  cursor: pointer; /* Cursor pointer to indicate it's clickable */
-  font-size: 1em; /* Matching font size with text fields */
-  margin-top: 10px; /* Spacing above the button */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
 }
 
 button:hover {
-  background-color: #295878; /* Slightly darker blue on hover */
+  background-color: #295878;
 }
 
 
-  /* Profile Section Styling */
 .profile-section {
   background: white;
   padding: 20px;
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 700px; /* Maximum width of the profile section */
+  max-width: 700px;
   cursor: pointer;
 }
 
 .profile-name {
-  font-size: 30px; /* Larger font size for the name */
-  font-weight: 550; /* Make the name stand out */
-  margin-bottom: 10px; /* Spacing after the name */
+  font-size: 30px;
+  font-weight: 550;
+  margin-bottom: 10px;
 }
 
 .profile-bio {
-  font-size: 1.2em; /* Slightly larger font size for the bio */
-  margin-bottom: 15px; /* Spacing after the bio */
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
 .profile-content {
-  font-size: 1em; /* Standard font size for the content */
-  line-height: 1.6; /* Improve readability */
-  color: #333; /* Darker color for better contrast */
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* General text styling */
+
 .text-field {
-  width: 100%; /* Full width to fill the container */
-  padding: 10px; /* Padding inside the text field */
-  margin-bottom: 20px; /* Spacing after each text field */
-  border: 1px solid #ccc; /* Subtle border */
-  border-radius: 4px; /* Slightly rounded corners */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* Button styling */
+
 .button {
   padding: 10px 15px;
-  background-color: #3498db; /* Blue background for buttons */
+  background-color: #3498db;
   color: white;
   border: none;
-  border-radius: 4px; /* Rounded corners for buttons */
-  cursor: pointer; /* Cursor pointer to indicate it's clickable */
-  font-size: 1em; /* Matching font size with text fields */
-  margin-top: 10px; /* Spacing above the button */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
 }
 
 .button:hover {
-  background-color: #295878; /* Slightly darker blue on hover */
+  background-color: #295878;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .profile-section {
-    width: 95%; /* Full width on smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
+    width: 95%;
+    padding: 10px;
   }
   .profile-name, .profile-bio {
-    text-align: center; /* Center text on smaller screens */
+    text-align: center;
   }
+}
+
+
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile-card h3 {
+  margin-top: 0;
+}
+
+.profile-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
