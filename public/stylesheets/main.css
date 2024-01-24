@@ -2,6 +2,13 @@ html {
   box-sizing: border-box;
 }
 
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+
 *, *::before, *::after {
   box-sizing: inherit;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -58,7 +65,6 @@ nav > i.presence-title {
 
 
 nav > a {
-  margin: 0 10px;
   text-decoration: none;
   padding: 8px 16px;
   border: 2px solid transparent;
@@ -195,6 +201,8 @@ button:hover {
 
 
 
+/* ... other styles ... */
+
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -203,18 +211,97 @@ button:hover {
 }
 
 .profile-card {
+  display: block;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-decoration: none;
   color: inherit;
+  background-color: white;
+}
+
+.profile-card div {
+  margin-bottom: 10px; /* Space between text and button */
 }
 
 .profile-card h3 {
   margin-top: 0;
 }
 
+.profile-card p {
+  margin: 0 0 10px 0;
+}
+
+.profile-card .button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-card .button:hover {
+  background-color: #295878;
+}
+
 .profile-card:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
+
+
+
+.profile-info {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.update-form {
+  margin-bottom: 20px;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.update-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.update-content {
+  margin-bottom: 15px;
+}
+
+.update-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+

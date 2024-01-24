@@ -4,14 +4,16 @@
 
 <main>
   <div class="people-grid">
-      <% profiles.forEach((profile) => { %>
-          <%= profile.name %>
-          <%= profile.bio %>
-          <a href="/profiles/<%= profile._id %>" class="profile-card"><button class="button">View Profile</button></a>
-        <% }) %>
+    <% profiles.forEach((profile) => { %>
+      <a href="/profiles/<%= profile._id %>" class="profile-card">
+        <div>
+          <h3><%= profile.name %></h3>
+          <p><%= profile.bio %></p>
+        </div>
+        <button class="button">View Profile</button>
+      </a>
+    <% }) %>
   </div>
-
 </main>
 
 <%- include('../partials/footer') %>
-
