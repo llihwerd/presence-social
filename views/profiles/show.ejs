@@ -18,9 +18,9 @@
 
   <% if (profile.equals(user?.profile._id)) { %>
   <form id="add-update-form" action="/updates" method="POST" class="update-form">
-    <label for="content-textarea">Update:</label>
+    <label for="content-textarea">What's on your Mind:</label>
     <textarea name="content" class="text-field" id="content-textarea"></textarea>
-    <button class="button" type="submit">Post Update</button>
+    <button class="postbutton" type="submit">Post Update</button>
   </form>
   <% } %>
 
