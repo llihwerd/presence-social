@@ -361,3 +361,31 @@ button:hover {
   margin: 0;
 }
 
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0; /* Adjust as needed */
+}
+
+.back-button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.main-title {
+  text-align: center;
+  margin: 0; /* Removes default margin to align the title properly */
+}
+
+/* Additional CSS to ensure the title-bar doesn't affect the main title alignment */
+.update-section {
+  max-width: 1200px; /* or whatever max-width you're using */
+  margin: 0 auto; /* This centers the update section */
+}
