@@ -293,9 +293,7 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.update-content {
-  margin-bottom: 15px;
-}
+
 
 .update-actions {
   display: flex;
@@ -330,7 +328,7 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #f9f9f9;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .button-link {
@@ -381,11 +379,11 @@ button:hover {
 
 .main-title {
   text-align: center;
-  margin: 0; /* Removes default margin to align the title properly */
+  margin: 0;
 }
 
-/* Additional CSS to ensure the title-bar doesn't affect the main title alignment */
+
 .update-section {
-  max-width: 1200px; /* or whatever max-width you're using */
-  margin: 0 auto; /* This centers the update section */
+  max-width: 1200px;
+  margin: 0 auto;
 }
