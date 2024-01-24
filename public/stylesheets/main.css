@@ -201,8 +201,6 @@ button:hover {
 
 
 
-/* ... other styles ... */
-
 .people-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -222,7 +220,7 @@ button:hover {
 }
 
 .profile-card div {
-  margin-bottom: 10px; /* Space between text and button */
+  margin-bottom: 10px;
 }
 
 .profile-card h3 {
@@ -251,6 +249,7 @@ button:hover {
 
 .profile-card:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  background-color: #a7d5f1;
 }
 
 
