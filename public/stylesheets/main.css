@@ -16,9 +16,9 @@ body {
 }
 
 body {
-  background-color: #FBEBFF;
+  background-color: #4C4C6B;
   margin: 0;
-  color: #000000;
+  color: #f6f6fc;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -33,7 +33,7 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #8888AA;
   padding: 10px;
   width: 90%;
   max-width: 1200px;
@@ -49,12 +49,12 @@ body > main h2 {
 body > main h1 {
   display: inline;
   margin-bottom: 20px;
-  color: #000000;
+  color: #f6f6fc;
 }
 
 body > nav {
   grid-area: nav;
-  background-color: #2c3e50;
+  background-color: #7070FF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@ body > nav {
 
 nav > i.presence-title {
   font-size: 35px;
-  color: white;
+  color: #f6f6fc;
   padding: 5px;
 }
 
@@ -77,23 +77,23 @@ nav > a {
 }
 
 nav > a:not(:last-child) {
-  border-right: 2px solid #5c6f7b;
+  border-right: 2px solid #f6f6fc;
 }
 
 nav > a:visited {
-  color: white;
+  color: #f6f6fc;
 }
 
 nav > a.left:hover, nav > a.active {
   color: #2c3e50;
-  background-color: #e8eceb;
-  border-color: #e8eceb;
+  background-color: #f6f6fc;
+  border-color: #f6f6fc;
 }
 
 
 nav > a.right {
   margin-left: auto;
-  color: white;
+  color: #f6f6fc;
 }
 
 nav > a.right:hover, nav > a.right.active {
@@ -270,7 +270,8 @@ button:hover {
 
 
 .profile-info {
-  background: white;
+  background: #4C4C6B;
+  color: #F6F6FC;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -293,8 +294,8 @@ button:hover {
 }
 
 .update-card {
-  background: white;
-  border: 1px solid #ccc;
+  background: #F6F6FC;
+  border: 3px solid #4C4C6B;
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -331,10 +332,10 @@ button:hover {
 }
 
 .update-content {
+  background: #4C4C6B;
+  color: #F6F6FC;
   padding: 15px; 
-  border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #f9f9f9;
   margin-bottom: 10px;
 }
 
