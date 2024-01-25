@@ -65,7 +65,7 @@ body > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -78,7 +78,7 @@ nav > i.presence-title {
 
 nav > a {
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 8px;
   border: 2px solid transparent;
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
@@ -355,25 +355,19 @@ button:hover {
 }
 
 
-.title-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
-  width: 85vw;
-}
 
 .back-button {
   display: flex;
   justify-content: flex-start;
-  padding: 10px 15px;
+  padding: 5px 7.5px;
   background-color: #AF2BBF;
   color: white;
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 17px;
   width: fit-content;
+  margin-bottom: 30px;
 }
 
 .back-button:hover {
