@@ -28,14 +28,19 @@
   <% } %>
   <% if (user) { %>
     <h3>Glad you're here, <%= user ? user.profile.name : "friend" %></h3>
-    <a href="/auth/logout" class="right">
-      <button type="submit">Logout</button>
-    </a>
-    <h4><a 
+    <a 
     href="/profiles/<%= user.profile._id %>" %>
   >
-  View your profile >>>
-  </a></h4>
+  <button class="button">View Your Profile</button>
+  </a>
+  <a 
+    href="/profiles" %>
+  >
+  <button class="button">View All Profiles</button>
+  </a>
+  <a href="/auth/logout" class="right">
+    <button type="submit">Logout</button>
+  </a>
   <% } else { %>
     <div 
       id="g_id_onload"
