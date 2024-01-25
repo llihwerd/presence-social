@@ -33,13 +33,10 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #8888AA;
   padding: 10px;
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
 }
 
 body > main h2 {
@@ -102,34 +99,6 @@ nav > a.right:hover, nav > a.right.active {
   border-color: none;
 }
 
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-th {
-  background-color: #2c3e50;
-  color: white; 
-}
-
-td {
-  background-color: #f9f9f9;
-}
-
-tr:hover {
-  background-color: #e8eceb;
-}
 
 
 button {
@@ -270,8 +239,8 @@ button:hover {
 
 
 .profile-info {
-  background: #4C4C6B;
-  color: #F6F6FC;
+  background: #F6F6FC;
+  color: #4C4C6B;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -295,7 +264,6 @@ button:hover {
 
 .update-card {
   background: #F6F6FC;
-  border: 3px solid #4C4C6B;
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -332,8 +300,8 @@ button:hover {
 }
 
 .update-content {
-  background: #4C4C6B;
   color: #F6F6FC;
+  background: #4C4C6B;
   padding: 15px; 
   border-radius: 4px;
   margin-bottom: 10px;
@@ -354,9 +322,10 @@ button:hover {
 }
 
 .comment-card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
+  background: #F6F6FC;
+  color: #4C4C6B;
   padding: 8px;
+  margin: 10px 10px 10px 0;
   border-radius: 8px;
 }
 
