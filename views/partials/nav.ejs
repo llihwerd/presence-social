@@ -5,17 +5,17 @@
 <body>
   <nav>
     <a 
-    href="/"
+    href="/" class="left"
   >
   <i class="presence-title">Presence Social</i>
   </a>
     <a 
-      href="/profiles"
+      href="/profiles" class="left"
     >
       All Profiles
     </a>
     <% if (user && user.profile) { %>
-      <a href="/profiles/<%= user.profile._id %>">
+      <a href="/profiles/<%= user.profile._id %>" class="left">
         My Profile
       </a>
     <% } %>

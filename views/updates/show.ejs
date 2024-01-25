@@ -3,10 +3,10 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <div class="title-bar">
-    <a href="/profiles/<%= update.owner._id %>" class="back-button">Back</a>
-    <h1 class="main-title"><%= title %></h1>
-  </div>
+  <section class="title-bar">
+      <div><a href="/profiles/<%= update.owner._id %>" class="back-button">Back</a></div>
+      <h1 class="main-title"><%= title %></h1>
+  </section>
   <section class="update-section">
     <div class="update-show-card">
       <p class="update-posted-by">Posted by: <%= update.owner.name %></p>
