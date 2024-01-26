@@ -40,11 +40,11 @@ A simple social media platform where users can personalize their profiles, post 
 ## Next Steps (icebox)
 
 * Clean up code and find ways to reduce hard-coded solutions through more dynamic methods.
-* AAU, I should be able to delete comments I have posted, both my or another user's update.
+* AAU, I should be able to delete comments I have posted, both my and another user's update.
 * AAU I should be able to like and unlike a status update, both my or another user's update.
 * AAU, I should be able to request to be friends with another user.
 * AAU, I should be able to accept a friend request sent by another user.
 * AAU, I should be able to send and receive private messages from users on my friends list.
-* AAU, I should be able to see a chronolofical feed of all status updates posted by people on my friends list.
+* AAU, I should be able to see a chronological feed of all status updates posted by people on my friends list.
 * AAU, I should be able to add a picture to my profile page.
 * Improve format and styling of readme.
