@@ -1,65 +1,50 @@
-# MEN Stack with OAuth Template
+# Presence Social
 
-This is a MEN Stack template that includes OAuth.
+A simple social media platform where users can personalize their profiles, post updates, and leave anonymous comments on other user's updates.
 
-Use this to go build things! 🚀
 
-## To Use This Template
+![Starting Screen](https://img1.wsimg.com/isteam/ip/1da0c1d6-0276-4dec-be05-23cf138b20ca/Screenshot%202024-01-05%20at%2010.20.16%E2%80%AFAM.png)
 
-__Replace `<name-of-your-app-here>` (including the `<` and `>`) in the commands below with the name of your app!__
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
+![Choice of Starter Pokemon](https://img1.wsimg.com/isteam/ip/1da0c1d6-0276-4dec-be05-23cf138b20ca/Screenshot%202024-01-05%20at%2010.20.46%E2%80%AFAM.png)
 
-Once you are in the project directory:
 
-```bash
-rm -rf .git
-```
+## Getting Started
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
+### >>> [Join the next Social Media revolution!](https://presence-social.fly.dev/)
+* [Planning materials](https://trello.com/b/qpAhduAo/presencesocial)
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
+## Attributions
 
-Re-initialize a git repository:
+* [Free use Color Palettes](https://presence-social.fly.dev/)
+* [Favicon](https://canva.com)
 
-```bash
-git init
-```
 
-Create a repo for this project on GitHub and add that remote to your project with `git remote add origin Your-repo-URL-here`.
+## Technologies
 
-Run npm i to fetch the template's dependencies:
+* MacOS
+* Git
+* HTML
+* CSS
+* JavaScript
+* https://code.visualstudio.com/
+* https://www.google.com/chrome/
+* https://github.com
+* https://developer.mozilla.org/en-US/
+* https://google.com
+* https://canva.com
+* https://notion.so
+* https://fly.io
 
-```bash
-npm i
-```
 
-touch a .env file:
+## Next Steps (icebox)
 
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this `README.md` file and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push origin main
-```
-
-You're done!
+* Clean up code and find ways to reduce hard-coded solutions through more dynamic methods.
+* AAU, I should be able to delete comments I have posted, both my or another user's update.
+* AAU I should be able to like and unlike a status update, both my or another user's update.
+* AAU, I should be able to request to be friends with another user.
+* AAU, I should be able to accept a friend request sent by another user.
+* AAU, I should be able to send and receive private messages from users on my friends list.
+* AAU, I should be able to see a chronolofical feed of all status updates posted by people on my friends list.
+* AAU, I should be able to add a picture to my profile page.
+* Improve format and styling of readme.
