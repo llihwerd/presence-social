@@ -3,10 +3,10 @@
 A simple social media platform where users can personalize their profiles, post updates, and leave anonymous comments on other user's updates.
 
 
-![Starting Screen](https://img1.wsimg.com/isteam/ip/1da0c1d6-0276-4dec-be05-23cf138b20ca/Screenshot%202024-01-05%20at%2010.20.16%E2%80%AFAM.png)
+![Home Screen](https://github.com/llihwerd/presence-social/blob/main/public/assets/home_page_sc.png?raw=true)
 
 
-![Choice of Starter Pokemon](https://img1.wsimg.com/isteam/ip/1da0c1d6-0276-4dec-be05-23cf138b20ca/Screenshot%202024-01-05%20at%2010.20.46%E2%80%AFAM.png)
+![Your Profile Page](https://github.com/llihwerd/presence-social/blob/main/public/assets/profile_page_sc.png?raw=true)
 
 
 ## Getting Started
