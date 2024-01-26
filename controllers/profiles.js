@@ -2,6 +2,7 @@ import { Profile } from "../models/profile.js"
 import { Update } from "../models/update.js"
 
 
+
 function index(req, res) {
   Profile.find({})
   .then(profiles => {
@@ -15,9 +16,6 @@ function index(req, res) {
     res.redirect('/')
   })
 }
-
-
-
 
 
 
@@ -72,7 +70,6 @@ function update(req, res) {
     res.redirect(`/profiles/${req.user.profile._id}`)
   })
 }
-
 
 
 

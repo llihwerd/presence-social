@@ -65,7 +65,7 @@ body > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 7px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,9 +83,6 @@ nav > a {
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
-nav > a:not(:last-child) {
-  border-right: 2px solid #f6f6fc;
-}
 
 nav > a:visited {
   color: #f6f6fc;
