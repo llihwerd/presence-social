@@ -8,7 +8,7 @@ const router = Router()
 router.get('/', profilesCtrl.index)
 
 // GET http://localhost:3000/profiles/:profileId
-router.get('/:profileId', isLoggedIn, profilesCtrl.show)
+router.get('/:profileId', profilesCtrl.show)
 
 // GET http://localhost:3000/profiles/:profileId/edit
 router.get('/:profileId/edit', isLoggedIn, profilesCtrl.edit)
