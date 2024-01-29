@@ -27,6 +27,7 @@ A simple social media platform where users can personalize their profiles, post 
 * HTML
 * CSS
 * JavaScript
+* Google OAUTH
 * https://code.visualstudio.com/
 * https://www.google.com/chrome/
 * https://github.com
