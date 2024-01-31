@@ -27,6 +27,11 @@ A simple social media platform where users can personalize their profiles, post 
 * HTML
 * CSS
 * JavaScript
+* MongoDB
+* Express
+* Node
+* EJS
+* Passport.js
 * Google OAUTH
 * https://code.visualstudio.com/
 * https://www.google.com/chrome/

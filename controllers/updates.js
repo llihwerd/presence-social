@@ -27,13 +27,13 @@ function show(req, res) {
       update: update,
       title: 'Update',
       user: req.user
-      })
     })
+  })
     .catch(err => {
       console.log(err)
       res.redirect('/')
-    })
-  }
+  })
+}
 
   
 
